@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Start</title>
+</head>
+<body>
+	<form action="LoginProcess" method="post">
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Student ID: <input type="text" name="studentid"><br>
+		<input type="hidden" name="choice" value="login">
+		<input type="submit" value="Login">
+	</form>
+	
+	<form action="LoginProcess" method="post">
+		<input type="hidden" name="choice" value="browse">
+		<input type="submit" value="Browse">
+	</form>
+	
+	<i>Incorrect login information will send you to browse</i>
+</body>
+</html>
